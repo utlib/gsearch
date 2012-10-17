@@ -1,0 +1,14 @@
+# $Id: repository.properties 5732 2006-11-27 15:26:04Z gertsp $
+
+fgsrepository.repositoryName = <%= node['gsearch']['repo_name'] %>
+
+fgsrepository.fedoraSoap = http://localhost:8080/fedora/services
+fgsrepository.fedoraUser = <%= node['fedora']['fedora_admin_user'] %>
+fgsrepository.fedoraPass = <%= node['fedora']['fedora_admin_pass'] %>
+fgsrepository.fedoraObjectDir = <%= node['fedora']['root'] %>/data/objectStore
+fgsrepository.fedoraVersion = <%= node['fedora']['version'] %>
+
+fgsrepository.defaultGetRepositoryInfoResultXslt = copyXml
+
+fgsrepository.trustStorePath = <%= node['fedora']['root'] %>/server/truststore
+fgsrepository.trustStorePass = tomcat
